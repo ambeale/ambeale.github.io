@@ -11,6 +11,9 @@
           {% if site.title != '' %}
           <h1 class="text-center">{{site.title}}</h1>
           {% endif %}
+          {% if site.subtitle != '' %}
+          <h1 class="text-center">{{site.subtitle}}</h1>
+          {% endif %}
 
           {% if site.description != '' or site.enable_contact == true %}
           <p class="text-center">
@@ -27,14 +30,14 @@
 
           <div class="hero-buttons">
 
-            {% if site.twitter_username != '' %}
-              <a href="https://twitter.com/{{ site.twitter_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
+            {% if site.email_username != '' %}
+              <a href="mailto:{{ site.email_username }}@gmail.com"><button class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-lg"></i>Email</button></a>
             {% endif %}
             {% if site.github_username != '' %}
               <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
             {% endif %}
-            {% if site.medium_username != '' %}
-              <a href="https://{{ site.medium_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-medium fa-lg"></i>Medium</button></a>
+            {% if site.linkedin_username != '' %}
+              <a href="https://linkedin.com/in/{{ site.linkedin_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-lg"></i>LinkedIn</button></a>
             {% endif %}
 
           </div>
